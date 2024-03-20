@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import GitHubImage from '../../assets/NavGitImage.svg'
 import BlogImage from '../../assets/BlogImage.png'
+import '../Navbar/Nav.css';
 
 
 function ColorSchemesExample({setShowSkills,setShowProject}) {
@@ -27,7 +28,7 @@ function ColorSchemesExample({setShowSkills,setShowProject}) {
     <>
       <Navbar bg="light" data-bs-theme="light">
         <Container>
-          <Navbar.Brand href="#home" style={{
+          <Navbar.Brand href="/" style={{
             fontWeight:'bolder'
           }}>Rin's</Navbar.Brand>
           <Navbar.Brand href="https://github.com/HyeRinGrace" style={{

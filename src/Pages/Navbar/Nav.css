@@ -1,0 +1,4 @@
+.navbar .nav-link.active {
+    color: white; 
+    background-color: rgb(205, 203, 203); 
+}
