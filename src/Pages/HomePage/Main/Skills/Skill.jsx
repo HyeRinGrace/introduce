@@ -12,6 +12,7 @@ import ReduxImage from '../../../../assets/ReduxImage.svg';
 import ReactQueryImage from '../../../../assets/ReactQueryImage.svg';
 import FirebaseImage from '../../../../assets/Firebase.svg';
 import { Fade } from "react-awesome-reveal";
+import Typewriter from "typewriter-effect";
 
 const Skill = () => {
   const assets1 = [JsImage, CssImage, HtmlImage, ReactImage, GitImage];
@@ -23,6 +24,15 @@ const Skill = () => {
         fontSize:'30px',
         fontWeight:'bold',
       }}>{"Skill's"}</Fade>
+      <Typewriter
+        options={{
+        strings: ["보유한 기술들 입니다."],
+        autoStart: true,
+        loop: true,
+        delay: 100,
+        }}
+        style={{ fontSize: "60px" }}
+      />
       <Container className='SkillContainer'>
         <Row>
           <Col className='skills'>

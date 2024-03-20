@@ -8,6 +8,7 @@ import Nav from '../../Navbar/Nav';
 import Banner from '../Banner/Banner';
 import Skill from './Skills/Skill';
 import Project from './Projects/Project';
+import Bottom from './Bottom/Bottom';
 
 
 
@@ -56,8 +57,10 @@ const MainPage = () => {
                             </Col>
                         </Row>
                     </Container>
+                    
                 </>
             )}
+            <Bottom/>
         </>
     );
 };

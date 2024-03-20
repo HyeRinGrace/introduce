@@ -1,9 +1,6 @@
-.imageContainer {
-    float: left; /* 왼쪽으로 이미지를 배치합니다. */
-}
-
 .meImage {
-    width: 100%; /* 이미지를 부모 요소에 맞게 채웁니다. */
-    height: 500px;
+    padding-left: 30px;
+    width: 200px; /* 이미지를 부모 요소에 맞게 채웁니다. */
+    height: 400px;
     border-radius: 5px; /* 이미지에 둥근 테두리를 추가합니다. */
 }

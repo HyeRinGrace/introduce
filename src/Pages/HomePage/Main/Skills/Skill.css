@@ -1,8 +1,7 @@
 .SkillContainer{
     color: white;
     padding-top: 60px;
-    padding-bottom:54px;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom:81px;
 }
 
 .SkillImages{
@@ -31,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 

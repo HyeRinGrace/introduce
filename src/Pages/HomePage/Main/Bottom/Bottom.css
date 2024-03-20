@@ -1,0 +1,13 @@
+.BottomContainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.bottomFont1{
+    font-size: 13px;
+}
+
+.bottomFont2{
+    font-size: 13px;
+}

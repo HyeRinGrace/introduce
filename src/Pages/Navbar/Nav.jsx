@@ -1,6 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import GitHubImage from '../../assets/NavGitImage.svg'
+import BlogImage from '../../assets/BlogImage.png'
+
 
 function ColorSchemesExample({setShowSkills,setShowProject}) {
 
@@ -24,7 +27,24 @@ function ColorSchemesExample({setShowSkills,setShowProject}) {
     <>
       <Navbar bg="light" data-bs-theme="light">
         <Container>
-          <Navbar.Brand href="#home">HR</Navbar.Brand>
+          <Navbar.Brand href="#home" style={{
+            fontWeight:'bolder'
+          }}>Rin's</Navbar.Brand>
+          <Navbar.Brand href="https://github.com/HyeRinGrace" style={{
+            fontWeight:'bolder'
+          }}>
+            <img src={GitHubImage}/>
+            
+            </Navbar.Brand>
+            <Navbar.Brand href="https://velog.io/@kdjsanh/posts" style={{
+            fontWeight:'bolder'
+          }}>
+            <img src={BlogImage} style={{
+              width:'30px'
+            }}/>
+            
+            </Navbar.Brand>     
+
           <Nav className="ms-auto">
             <Nav.Link href="#home" onClick={HomeMenuTrue}>Home</Nav.Link>
             <Nav.Link href="#Skills" onClick={skillsMenuTrue}>Skill's</Nav.Link>
