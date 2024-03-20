@@ -1,0 +1,25 @@
+.MainContainer{
+    width: 100%;
+    height: 600px;
+    padding-top: 100px;
+}
+
+
+.RowBox-1{
+    padding-right:400px;
+   
+}
+
+.RowBox-2{
+    width: 1000px;
+}
+
+
+.RowBox-1, .RowBox-2 {
+    overflow: hidden; 
+}
+
+
+.MainContainer::-webkit-scrollbar {
+    display: none; 
+}

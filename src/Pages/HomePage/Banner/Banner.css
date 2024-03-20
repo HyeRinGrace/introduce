@@ -1,0 +1,27 @@
+.BannerContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* 이미지가 화면을 넘어가지 않도록 설정 */
+}
+
+.BannerImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* 이미지가 부모 요소의 너비를 꽉 채우도록 설정 */
+    height: 100%; /* 이미지가 부모 요소의 높이를 꽉 채우도록 설정 */
+    object-fit: cover; /* 이미지가 부모 요소의 크기에 맞게 채워지도록 설정 */
+    z-index: -1; /* 배너 텍스트보다 뒤로 가도록 설정 */
+}
+
+.BannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    z-index: 1; /* 배너 텍스트가 이미지 위로 올라오도록 설정 */
+    color: rgb(0, 0, 0); /* 텍스트 색상 설정 (예시) */
+    font-size: 60px; /* 텍스트 크기 설정 (예시) */
+    font-weight: bold; /* 텍스트 굵기 설정 (예시) */
+}
