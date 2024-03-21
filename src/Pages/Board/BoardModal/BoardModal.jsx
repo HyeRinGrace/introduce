@@ -84,23 +84,23 @@ const BoardModal = ({ setIsModalOpen }) => {
         <Modal.Body>
           <form className="Form" onSubmit={handleSubmit(onSubmit)}>
             <div className='auth-wrapper'>
-              <label htmlFor='email'>email</label>
-              <input name='email' type='email' id="email" placeholder='email'
+              <label htmlFor='email'>이메일</label>
+              <input name='email' type='email' id="email" placeholder='이메일을 입력해주세요.'
                 {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
               />
-              {errors.email && <p>email을 입력해주세요.</p>}
+              {errors.email && <p style={{color:'red', fontSize:'13px'}}>email을 입력해주세요.</p>}
 
-              <label htmlFor='password'>password</label>
-              <input name="password" type='password' id='password' placeholder='비밀번호'
+              <label htmlFor='password'>비밀번호</label>
+              <input name="password" type='password' id='password' placeholder='비밀번호를 입력해주세요.'
                 {...register("password", { required: true, minLength: 6 })}
               />
-              {errors.password && errors.password.type === 'required' && <p>비밀번호를 입력해주세요</p>}
-              {errors.password && errors.password.type === 'minLength' && <p>비밀번호를 4자 이상 만들어주세요</p>}
+              {errors.password && errors.password.type === 'required' && <p style={{color:'red', fontSize:'13px'}}>비밀번호를 입력해주세요</p>}
+              {errors.password && errors.password.type === 'minLength' && <p style={{color:'red', fontSize:'13px'}}>비밀번호를 6자 이상 만들어주세요</p>}
 
               
 
-              <label htmlFor='text'>text</label>
-              <input type='text' name='text' id='text' placeholder='내용'
+              <label htmlFor='text'>내용</label>
+              <input type='text' name='text' id='text' placeholder='내용을 입력해주세요.'
                 {...register('text', { require: true, minLength:1 })}
               />
               {errors.text && errors.text.type === 'required' && <p>텍스트를 입력해주세요.</p>}
@@ -111,10 +111,10 @@ const BoardModal = ({ setIsModalOpen }) => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            취소
+            닫기
           </Button>
           <Button type='submit' onClick={handleSubmit(onSubmit)} disabled={loading}>
-            제출
+            등록
           </Button>
         </Modal.Footer>
       </Modal>
