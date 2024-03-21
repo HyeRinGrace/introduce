@@ -4,6 +4,8 @@ import { Modal, Button } from 'react-bootstrap';
 const ProjectModal = ({ setShowModal, project }) => {
     const [modalOpen, setModalOpen] = useState(true);
 
+    console.log(project)
+
     return (
         <Modal
             show={modalOpen}
@@ -18,7 +20,7 @@ const ProjectModal = ({ setShowModal, project }) => {
             </Modal.Header>
             <Modal.Body>
                 <img style={{
-                  width:'700px',
+                  width:'800px',
                 }}src={project.imageURL}/>
             </Modal.Body>
             <Modal.Footer>

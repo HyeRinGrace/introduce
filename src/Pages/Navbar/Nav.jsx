@@ -6,7 +6,7 @@ import BlogImage from '../../assets/BlogImage.png'
 import '../Navbar/Nav.css';
 
 
-function ColorSchemesExample({setShowSkills,setShowProject}) {
+function ColorSchemesExample({setShowSkills,setShowProject,setShowBoard}) {
 
 
   function skillsMenuTrue(){
@@ -16,10 +16,17 @@ function ColorSchemesExample({setShowSkills,setShowProject}) {
   function HomeMenuTrue(){
     setShowSkills(false);
     setShowProject(false);
+    setShowBoard(false);
   }
 
   function ProjectsMenuTrue(){
     setShowProject(true);
+    setShowSkills(false);
+  }
+
+  function BoardMenuTrue(){
+    setShowBoard(true);
+    setShowProject(false);
     setShowSkills(false);
   }
 
@@ -50,7 +57,7 @@ function ColorSchemesExample({setShowSkills,setShowProject}) {
             <Nav.Link href="#home" onClick={HomeMenuTrue}>Home</Nav.Link>
             <Nav.Link href="#Skills" onClick={skillsMenuTrue}>Skill's</Nav.Link>
             <Nav.Link href="#Projects" onClick={ProjectsMenuTrue}>Project</Nav.Link>
-            <Nav.Link href="/board">Board</Nav.Link>
+            <Nav.Link href="#board" onClick={BoardMenuTrue}>Board</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

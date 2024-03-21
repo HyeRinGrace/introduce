@@ -6,6 +6,7 @@ import BoardPage from './Pages/Board/BoardPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  
   return (
     <Routes>
       <Route path='/' element = {<MainPage/>} />

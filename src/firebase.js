@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -9,6 +10,7 @@ import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: "AIzaSyAKXQnnJ8VXPRJQ3yXMEWD9UErU3T3szr0",
   authDomain: "portpoliodata.firebaseapp.com",
+  databaseURL: "https://portpoliodata-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "portpoliodata",
   storageBucket: "portpoliodata.appspot.com",
   messagingSenderId: "244103918154",
@@ -19,5 +21,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+export const db = getDatabase(app); //데이터 베이스 가져오기
 
 export default app;
