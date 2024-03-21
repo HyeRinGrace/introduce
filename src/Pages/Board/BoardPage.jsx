@@ -8,28 +8,31 @@ import { Fade } from "react-awesome-reveal";
 import Typewriter from "typewriter-effect";
 
 const BoardPage = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [messages, setMessages] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false); // 모달 오픈 상태 함수
+  const [messages, setMessages] = useState([]); //message를 담을 배열 상태 함수 선언
   const [currentPage, setCurrentPage] = useState(1); // 현재 페이지 상태 추가
   const [messagesPerPage] = useState(5); // 페이지당 메시지 수 상태 추가
-  const userRef = ref(db, 'users');
+  const userRef = ref(db, 'users'); // ref 참조 (db를, '어떤 데이터베이스')
 
   useEffect(() => {
     addMessageRoomsListeners();
   }, []);
 
+  // addMessageRoomsListeners는 데이터베이스에 있는 값들을 가져오는 함수이다.
   const addMessageRoomsListeners = () => {
-    const messageArray = [];
-    onChildAdded(userRef, dataSnapshot => {
+    const messageArray = []; // 빈 배열을 하나 만들어주고, 이유 (본질적인 배열에 영향을 없게 하기 위해서)
+    onChildAdded(userRef, dataSnapshot => { //onChildAdded와 dataSnapshot(firebase 함수) 를 통해 빈배열에 push 해준다. 무엇을? 데이터베이스 value값을
       messageArray.push(dataSnapshot.val());
-      setMessages([...messageArray]);
+      setMessages([...messageArray]); // 그리고, 얕은 복사를 통해 넣어준다. 
     });
   };
 
-  const indexOfLastMessage = currentPage * messagesPerPage;
-  const indexOfFirstMessage = indexOfLastMessage - messagesPerPage;
-  const currentMessages = messages.slice(indexOfFirstMessage, indexOfLastMessage);
+  // 여기는 페이지 네이션 부분
+  const indexOfLastMessage = currentPage * messagesPerPage; //마지막 페이지
+  const indexOfFirstMessage = indexOfLastMessage - messagesPerPage; //첫번째 페이지
+  const currentMessages = messages.slice(indexOfFirstMessage, indexOfLastMessage); //현재페이지
 
+  //화면에 render해줄 함수 배열로 데이터를 받았으니 우리는 map을 통하여 return해준다.
   const renderBoarderUserInfo = () => {
     return (
       currentMessages.length > 0 &&
@@ -48,10 +51,12 @@ const BoardPage = () => {
     );
   };
 
+  // 모달 오픈 함수
   const handleModal = () => {
     setIsModalOpen(true);
   };
 
+  // 모달 클로즈 함수
   const handleModalClose = () => {
     setIsModalOpen(false);
   };
