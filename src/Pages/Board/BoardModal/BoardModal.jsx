@@ -71,7 +71,7 @@ const BoardModal = ({ setIsModalOpen }) => {
 
   return (
     <>
-      <Modal show={setIsModalOpen}>
+      <Modal show={setIsModalOpen} onHide={setIsModalOpen}>
         <Modal.Header closeButton>
           <Modal.Title>글쓰기</Modal.Title>
         </Modal.Header>

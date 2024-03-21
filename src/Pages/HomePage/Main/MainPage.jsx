@@ -30,24 +30,6 @@ const MainPage = () => {
         bannerSetTime();
     }, []);
 
-    const handleShowSkills = () => {
-        setShowSkills(true);
-        setShowProject(false);
-        setShowBoard(false);
-    };
-
-    const handleShowProject = () => {
-        setShowSkills(false);
-        setShowProject(true);
-        setShowBoard(false);
-    };
-
-    const handleShowBoard = () => {
-        setShowSkills(false);
-        setShowProject(false);
-        setShowBoard(true);
-    };
-
     return (
         <>
             {banners === true ? (
