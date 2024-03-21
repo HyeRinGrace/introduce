@@ -85,7 +85,7 @@ const BoardModal = ({ setIsModalOpen }) => {
               {errors.email && <p>email을 입력해주세요.</p>}
 
               <label htmlFor='password'>password</label>
-              <input name="password" type='text' id='password' placeholder='비밀번호'
+              <input name="password" type='password' id='password' placeholder='비밀번호'
                 {...register("password", { required: true, minLength: 6 })}
               />
               {errors.password && errors.password.type === 'required' && <p>비밀번호를 입력해주세요</p>}
