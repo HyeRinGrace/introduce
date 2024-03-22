@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import './Banner.css';
-import BannerImage from '../../../assets/BannerImage.png';
+import BannerImage from '../../../assets/whiteBackground.jpg';
 
 const Banner = () => {
     const [bannerTitle, setBannerTitle] = useState('');

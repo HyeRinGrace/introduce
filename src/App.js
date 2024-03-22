@@ -10,7 +10,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element = {<MainPage/>} />
-      <Route path='/board' element= {<BoardPage/>}/>
+      {/* <Route path='/board' element= {<BoardPage/>}/> */}
     </Routes>
   );
 }

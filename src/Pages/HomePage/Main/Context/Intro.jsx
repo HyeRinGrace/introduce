@@ -12,10 +12,10 @@ const Intro = () => {
     }}>
     <Typewriter
         options={{
-        strings: ["인생은 항상 배우는 것이다."],
+        strings: ["인생은 늘 배움의 연속이다."],
         autoStart: true,
         loop: true,
-        delay: 100,
+        delay: 150,
         }}
         style={{ fontSize: "60px" }}
       />

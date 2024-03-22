@@ -33,15 +33,16 @@ const ProjectCard = () => {
             />
 
             <Container className='ProjectContainer'>
-                <Fade damping={9000}>
+                <Fade cascade={9000}>
                     <Row>
                         {items.map((item) => (
                             <Col key={item.id} md={3} style={{ marginBottom: '20px' }}>
-                                <Card>
+                                <Card className='Card'>
                                     <Card.Img onClick={() => handleCardClick(item)} variant="top" src={item.imageURL} />
                                     <Card.Body>
                                         <Card.Title style={{ fontSize: '13px' }}>{item.title}</Card.Title>
                                     </Card.Body>
+                                    
                                 </Card>
                             </Col>
                         ))}

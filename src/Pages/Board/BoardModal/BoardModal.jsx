@@ -51,7 +51,7 @@ const BoardModal = ({ setIsModalOpen }) => {
     }
   };
 
-  // 모달이 마운트 될때, useEffect를 통해 변화를 감지해줌
+  // 모달이 마운트 될때, useEffect를 통해 변화를 감지해줌(옵저버 감시자역할 (onAuthStateChanged))
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => { //Firebase에서는   Auth 서비스를 따로 두어서  그걸 통해서 훨씬 강한 인증과 Oauth(소셜 로그인)등 여러  가지 방법으로 로그인 하는걸 쉽게 구현해 두어서  Auth 서비스와  User 데이테베이스 모두에 정보를 넣어주어야 한다. onAuthStateChanged 함수의 인자에는 사용자의 인증 상태가 바뀔 때 호출하고 싶은 콜백 함수를 넣습니다. 콜백 함수를 등록하면 앞으로 인증 상태가 바뀔 때마다 매번 이 콜백 함수를 호출한다.
       if (user) {

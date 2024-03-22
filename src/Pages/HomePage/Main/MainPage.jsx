@@ -13,7 +13,7 @@ import BoardPage from '../../Board/BoardPage';
 
 
 const MainPage = () => {
-    const [banners, setBanners] = useState(false); // 일단 false로 변경
+    const [banners, setBanners] = useState(true); // 일단 false로 변경
 
     // 메뉴 선택 시, 변경해주는 영역
     const [showSkills, setShowSkills] = useState(false); // Skills 컴포넌트 출력 상태 추가
@@ -23,7 +23,7 @@ const MainPage = () => {
     const bannerSetTime = () => {
         setTimeout(() => {
             setBanners(false);
-        }, 4000);
+        }, 3600);
     };
 
     useEffect(() => {
