@@ -12,7 +12,7 @@ const Intro = () => {
     }}>
     <Typewriter
         options={{
-        strings: ["인생은 늘 배움의 연속이다."],
+        strings: ["인생은 늘 배움의 연속이다.","안녕하세요. 프론트엔드 개발자를 꿈꾸는 김혜린입니다."],
         autoStart: true,
         loop: true,
         delay: 150,
