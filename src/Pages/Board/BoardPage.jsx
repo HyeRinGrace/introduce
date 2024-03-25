@@ -73,7 +73,7 @@ const BoardPage = () => {
       </Fade>
       <Typewriter
         options={{
-          strings: ["피드백 부탁드립니다! 그리고 제 포트폴리오 봐주셔서 감사합니다."],
+          strings: ["피드백 부탁드립니다!","그리고 제 포트폴리오 봐주셔서 감사합니다."],
           autoStart: true,
           loop: true,
           delay: 100,

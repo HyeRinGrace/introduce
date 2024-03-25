@@ -4,3 +4,10 @@
     height: 400px;
     border-radius: 5px; /* 이미지에 둥근 테두리를 추가합니다. */
 }
+
+@media (max-width:768px) {
+    .meImage{
+        display: none;
+    }
+    
+}

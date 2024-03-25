@@ -56,3 +56,52 @@
     padding-top:350px;
     position: absolute;
 }
+
+@media (max-width: 768px) {
+    /* 모바일 화면에서 글자 크기와 여백 조정 */
+    .BoardContainer {
+      padding: 20px; /* 컨테이너 패딩 조정 */
+    }
+  
+    .indexBox {
+      font-size: 14px; /* 순서 상자 글자 크기 조정 */
+    }
+  
+    .emailBox {
+      font-size: 14px; /* 사용자 이메일 글자 크기 조정 */
+      margin-right: 5px; /* 오른쪽 여백 조정 */
+    }
+  
+    .userBox {
+      font-size: 14px; /* 사용자 정보 글자 크기 조정 */
+    }
+  
+    .pagination {
+      justify-content: center; /* 페이지네이션 가운데 정렬 */
+      margin-top: 20px; /* 페이지네이션 위 여백 조정 */
+      margin-bottom: 20px; /* 페이지네이션 아래 여백 조정 */
+    }
+
+    .userBox{
+        background-color: rgb(243, 244, 244);
+        width: 180px;
+        min-height: 40px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 5px;
+        border-radius: 4px;
+        padding-left: 10px;
+    }
+    
+    .emailBox{
+        background-color: rgb(243, 244, 244);
+        width: 180px;
+        min-height: 40px;
+        margin: 5px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+  }

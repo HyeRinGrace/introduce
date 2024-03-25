@@ -5,17 +5,6 @@
     border-bottom: 2px solid black;
 }
 
-@media screen and (max-width: 1024px) {
-    .MainContainer{
-        width: 100%;
-        height: 550px;
-        padding-top: 60px;
-        border-bottom: 2px solid black;
-    }
-    
-}
-
-
 .RowBox-1{
     padding-right:400px;
    
@@ -33,4 +22,14 @@
 
 .MainContainer::-webkit-scrollbar {
     display: none; 
+}
+
+@media (max-width:768px) {
+    .MainContainer{
+        width: 100%;
+        height: 600px;
+        padding-top: 60px;
+        border-bottom: none;
+    }
+    
 }

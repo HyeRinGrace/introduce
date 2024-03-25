@@ -16,7 +16,7 @@ import Typewriter from "typewriter-effect";
 
 const Skill = () => {
   const assets1 = [JsImage, CssImage, HtmlImage, ReactImage, GitImage];
-  const assets2 = [Vercel, NpmImage, ReduxImage, ReactQueryImage,FirebaseImage];
+  const assets2 = [Vercel, NpmImage, ReduxImage, ReactQueryImage, FirebaseImage];
 
   return (
     <>
@@ -36,18 +36,18 @@ const Skill = () => {
       <Container className='SkillContainer'>
         <Row>
           <Col className='skills'>
-            <Container className="d-flex flex-row"> 
+            <Container className="d-flex flex-wrap"> 
               {assets1.map((item, index) => (
-                <Fade duration={7000} key={index} className='ImageContainer'> 
+                <Fade duration={7000} key={index} className='ImageContainer' xs={12} sm={4} md={4}> 
                   <img className="SkillImages" src={item} alt={`Skill ${index}`} /> 
                 </Fade>
               ))}
             </Container>
-            <Container className="d-flex flex-row" style={{
+            <Container className="d-flex flex-wrap" style={{
               paddingBottom:'90px'
             }}> 
               {assets2.map((item, index) => (
-                <Fade duration={5000} key={index} className='ImageContainer'> 
+                <Fade duration={5000} key={index} className='ImageContainer' xs={12} sm={4} md={4}> 
                   <img className="SkillImages" src={item} alt={`Skill ${index}`} /> 
                 </Fade>
               ))}

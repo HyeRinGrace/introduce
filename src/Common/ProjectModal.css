@@ -50,3 +50,39 @@
     width: 20px;
     color: rgb(126, 125, 124);
 }
+
+
+@media (max-width: 768px) { /* 모바일 화면 크기에 따라 조정 */
+    .ProjectImage {
+      width: 100%; /* 화면 너비의 100%로 설정하여 이미지가 화면에 꽉 차도록 함 */
+      max-width: 250px; /* 최대 너비를 지정하여 화면이 너무 작을 때 이미지가 너무 커지지 않도록 함 */
+      height: auto; /* 가로 세로 비율 유지 */
+      border-radius: 10px;
+    }
+  
+    .ImageInfo {
+      font-size: 14px; /* 이미지 정보 텍스트 크기 조정 */
+    }
+
+    .col-3{
+        font-size: 14px;
+    }
+
+    .ContextBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid  rgb(237, 238, 240);
+        margin: 10px;
+        border-radius: 10px;
+        padding: 1px;
+        
+    }
+
+    .skills{
+        font-size: 14px;
+    }
+    .col-6{
+        font-size: 14px;
+    }
+  }

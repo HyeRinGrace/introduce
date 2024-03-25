@@ -22,8 +22,7 @@ const BoardModal = ({ setIsModalOpen }) => {
       setLoading(true);
       // firebase에 이메일과 패스워드로 인증하겠다.
       const createdUser = await createUserWithEmailAndPassword(auth, data.email, data.password);
-
-
+      
       // update 할것들 (data 비어있는 것들)
       await updateProfile(auth.currentUser, {
         displayName: data.email,

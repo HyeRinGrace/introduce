@@ -36,15 +36,15 @@ const ProjectModal = ({ setShowModal, project }) => {
                 </Row>
                 <div className='ContextXContainer'>
                     <Row className='ContextBox'>
-                        <Col xs={3} style={{ fontWeight: 'bold' }}>사용한 스킬 :</Col>
+                        <Col xs={3} style={{ fontWeight: 'bold' }}>사용한 스킬</Col>
                         <Col className="skills" xs={6}>{project.skills}</Col>
                     </Row>
                     <Row className='ContextBox'>
-                        <Col xs={3} style={{ fontWeight: 'bold' }}>프로젝트 진행중 문제 :</Col>
+                        <Col xs={3} style={{ fontWeight: 'bold' }}>프로젝트 진행중 문제</Col>
                         <Col xs={6}>{project.problem}</Col>
                     </Row>
                     <Row className='ContextBox'> 
-                        <Col xs={3} style={{ fontWeight: 'bold' }}>해결 방법 :</Col>
+                        <Col xs={3} style={{ fontWeight: 'bold' }}>해결 방법</Col>
                         <Col xs={6}>{project.solution}</Col>
                     </Row>
                 </div>
