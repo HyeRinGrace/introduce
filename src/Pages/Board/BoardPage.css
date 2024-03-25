@@ -84,7 +84,7 @@
 
     .userBox{
         background-color: rgb(243, 244, 244);
-        width: 180px;
+        width: 150px;
         min-height: 40px;
         display: flex;
         justify-content: left;
@@ -104,4 +104,5 @@
         justify-content: left;
         align-items: center;
     }
+
   }
