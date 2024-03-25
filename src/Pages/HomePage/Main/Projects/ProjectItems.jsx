@@ -11,7 +11,7 @@ const Projects = {
         "problem":"타입스크립트를 처음 접하여 많이 미숙했던 상태" ,"solution" : "팀에게 솔직하게 얘기 + 팀의 배려로 일부 기능을 구현하며 타입스크립트에 대해 공부 및 기능 구현" ,"link" :"https://maketkurly-project.vercel.app/" },
         { "id": "6", "title": "간단 날씨 페이지", "imageURL": "https://i.ibb.co/F8bwS4s/2024-03-19-00-14-36.png", "skills" : "react, bootstrap, 무료 날씨 API", 
         "problem":"위치 기반 lat과 lon기반으로 API를 호출해야하는데, API 딜레이로 에러" ,"solution" : "useEffect를 통해 페이지가 새로고침될때마다 사용자의 lat과 lon을 가져오도록 수정" ,"link" :"https://hyether.vercel.app/" },
-        { "id": "7", "title": "포트폴리오 페이지", "imageURL": "https://i.ibb.co/Y8SDVdP/2024-03-22-14-49-55.png", "skills" : "react, redux, firebase, bootstrap, typewriter-effect, react-awesome-reveal", "problem":"타이핑 주는 효과를 내고 싶었는데, setInterval로 일일히 다 구현하는데 어려운 문제" ,"solution" : "react-awesome-reveal과 typewriter-effect로 손쉽게 구현" ,"link" :"hhttps://tiny-chaja-c1975f.netlify.app/" }
+        { "id": "7", "title": "포트폴리오 페이지", "imageURL": "https://i.ibb.co/Y8SDVdP/2024-03-22-14-49-55.png", "skills" : "react, redux, firebase, bootstrap, typewriter-effect, react-awesome-reveal", "problem":"타이핑 주는 효과를 내고 싶었는데, setInterval로 일일히 다 구현하는데 어려운 문제" ,"solution" : "react-awesome-reveal과 typewriter-effect로 손쉽게 구현" ,"link" :"https://tiny-chaja-c1975f.netlify.app/" }
     ]
 }
 
