@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     padding-top: 100px;
+    height: 200px;
 }
 
 .bottomFont1{
@@ -17,7 +18,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 1px;
+        padding-top: 10px;
+        background-color: #F8F9FA;
         
     }
     
