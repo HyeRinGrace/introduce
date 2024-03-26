@@ -4,7 +4,7 @@ const Projects = {
         { "id": "2", "title": "간단 날씨 페이지", "imageURL": "https://i.ibb.co/mBkBQFG/2024-03-26-17-12-32.png", "skills" : "react, bootstrap, 무료 날씨 API", 
         "problem":"위치 기반 lat과 lon기반으로 API를 호출해야하는데, API 딜레이로 에러" ,"solution" : "useEffect를 통해 페이지가 새로고침될때마다 사용자의 lat과 lon을 가져오도록 수정" ,"link" :"https://hyether.vercel.app/" },
         { "id": "3", "title": "H&M 쇼핑몰", "imageURL": "https://i.ibb.co/Bq8TXCZ/2024-03-19-00-26-40.png","skills" : "react, redux, react-router-dom, redux-thunk ,json-server", 
-        "problem":"API 문제가 있는지, useParams값으로 검색 부분을 구현했지만 동작하지 않음" ,"solution" : "해결하지 못함" ,"link" :"https://rinshnm-hyerinkims-projects.vercel.app/" },
+        "problem":"API 문제가 있는지, useParams값으로 검색 부분을 구현했지만 동작하지 않음" ,"solution" : "json-server최신버전에서 검색기능이 동작하지 않아, 삭제 후 구버전으로 진행" ,"link" :"https://inquisitive-kelpie-0ddcea.netlify.app/" },
         { "id": "4", "title": "팀 쇼핑몰 페이지", "imageURL": "https://i.ibb.co/RB2xndT/2024-03-19-00-18-18.png", "skills" : "Vue, typescript, redux ,react-router-dom ,styled-components, 무료 product API", "problem":"팀프로젝트로 진행하다 보니 소통문제" ,"solution" : "매주 화,목,금 어려웠던 부분과 진행상태 해결법 소통" ,"link" :"https://front-end-ten-rho.vercel.app/" },
         { "id": "5", "title": "마켓컬리 클론코딩", "imageURL": "https://i.ibb.co/LpyxPH0/2024-03-19-01-01-33.png", "skills" : "Vite, typescript, redux, react-router-dom, bootstrap ", 
         "problem":"타입스크립트를 처음 접하여 많이 미숙했던 상태" ,"solution" : "팀에게 솔직하게 얘기 + 팀의 배려로 일부 기능을 구현하며 타입스크립트에 대해 공부 및 기능 구현" ,"link" :"https://maketkurly-project.vercel.app/" },
