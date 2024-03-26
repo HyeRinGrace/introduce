@@ -12,7 +12,7 @@ const Projects = {
         "problem":"인기순, 최신순, 장르별 필터과정에서 각각의 버튼 클릭 이후에 재클릭 했을 경우 동작하지 않은 문제" ,"solution" : "각 버튼을 클릭 이후 상태값 초기화, 페이지네이션 초기화 진행" ,"link" :"https://hyeflix-hyerinkims-projects.vercel.app/"},
         { "id": "7", "title": "스터디 채팅", "imageURL": "https://i.ibb.co/s1RQ2B5/2024-03-18-23-26-25.png","skills" : "Vue, react-hook-form, react-router-dom, md5,firebase, bootstrap", 
         "problem":"firebase 초기 세팅 및 각각의 채팅창으로 마운트될 때, 아이콘이 바로 보이지 않는 문제" ,"solution" : " firebase docs 정독 후 초기 세팅 진행, useEffect를 통해 채팅룸 id가 변경될때 마운트 진행 + 마운트 될 때 메세지 배열 초기화" ,"link" :"https://rins-study-chat.vercel.app/" },
-        { "id": "8", "title": "포트폴리오 페이지", "imageURL": "https://i.ibb.co/Y8SDVdP/2024-03-22-14-49-55.png", "skills" : "react, redux, firebase, bootstrap, typewriter-effect, react-awesome-reveal", "problem":"타이핑 주는 효과를 내고 싶었는데, setInterval로 일일히 다 구현하는데 어려운 문제" ,"solution" : "react-awesome-reveal과 typewriter-effect로 손쉽게 구현" ,"link" :"https://tiny-chaja-c1975f.netlify.app/" }
+        { "id": "8", "title": "포트폴리오 페이지", "imageURL": "https://i.ibb.co/BHDw6mS/2024-03-26-19-25-51.png", "skills" : "react, redux, firebase, bootstrap, typewriter-effect, react-awesome-reveal", "problem":"타이핑 주는 효과를 내고 싶었는데, setInterval로 일일히 다 구현하는데 어려운 문제" ,"solution" : "react-awesome-reveal과 typewriter-effect로 손쉽게 구현" ,"link" :"https://tiny-chaja-c1975f.netlify.app/" }
     ]
 }
 
