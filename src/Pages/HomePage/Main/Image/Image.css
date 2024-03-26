@@ -3,6 +3,11 @@
     width: 70%; /* 이미지를 부모 요소에 맞게 채웁니다. */
 }
 
+.meImage:hover{
+    transform: scale(1.1); 
+    transition: transform 0.9s ease; 
+}
+
 @media (max-width:768px) {
     .meImage{
         display: none;

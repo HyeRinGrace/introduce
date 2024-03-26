@@ -5,7 +5,7 @@ import me from '../../../../assets/me.png'
 
 const Image = () => {
   return (
-    <Fade cascade damping={0.1}>
+    <Fade cascade damping={0.3}>
         <img className = "meImage" src={me}/>
     </Fade>
   )
