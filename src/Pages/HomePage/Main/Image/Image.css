@@ -1,6 +1,6 @@
 .meImage {
     padding-left: 10px;
-    width: 100%; /* 이미지를 부모 요소에 맞게 채웁니다. */
+    width: 70%; /* 이미지를 부모 요소에 맞게 채웁니다. */
 }
 
 @media (max-width:768px) {
