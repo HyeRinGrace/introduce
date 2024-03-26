@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 
 const Image = () => {
   return (
-    <Fade duration={6000}>
+    <Fade cascade damping={0.1}>
         <img className = "meImage" src='https://i.ibb.co/hgkbWtD/X.png'/>
     </Fade>
   )
