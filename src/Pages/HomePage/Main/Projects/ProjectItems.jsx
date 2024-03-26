@@ -6,7 +6,7 @@ const Projects = {
         { "id": "3", "title": "H&M 쇼핑몰", "imageURL": "https://i.ibb.co/Bq8TXCZ/2024-03-19-00-26-40.png","skills" : "react, redux, react-router-dom, redux-thunk ,json-server", 
         "problem":"API 문제가 있는지, useParams값으로 검색 부분을 구현했지만 동작하지 않음" ,"solution" : "해결하지 못함" ,"link" :"https://rinshnm-hyerinkims-projects.vercel.app/" },
         { "id": "4", "title": "팀 쇼핑몰 페이지", "imageURL": "https://i.ibb.co/RB2xndT/2024-03-19-00-18-18.png", "skills" : "Vue, typescript, redux ,react-router-dom ,styled-components, 무료 product API", "problem":"팀프로젝트로 진행하다 보니 소통문제" ,"solution" : "매주 화,목,금 어려웠던 부분과 진행상태 해결법 소통" ,"link" :"https://front-end-ten-rho.vercel.app/" },
-        { "id": "5", "title": "마켓컬리 클론코딩", "imageURL": "https://i.ibb.co/LpyxPH0/2024-03-19-01-01-33.png", "skills" : "Vue, typescript, redux, react-router-dom, bootstrap ", 
+        { "id": "5", "title": "마켓컬리 클론코딩", "imageURL": "https://i.ibb.co/LpyxPH0/2024-03-19-01-01-33.png", "skills" : "Vite, typescript, redux, react-router-dom, bootstrap ", 
         "problem":"타입스크립트를 처음 접하여 많이 미숙했던 상태" ,"solution" : "팀에게 솔직하게 얘기 + 팀의 배려로 일부 기능을 구현하며 타입스크립트에 대해 공부 및 기능 구현" ,"link" :"https://maketkurly-project.vercel.app/" },
         { "id": "6", "title": "넷플릭스 클론코딩", "imageURL": "https://i.ibb.co/CVVDqkZ/2024-03-18-23-23-17.png", "skills" : "react, react-query, bootstrap, 무료 영화 API", 
         "problem":"인기순, 최신순, 장르별 필터과정에서 각각의 버튼 클릭 이후에 재클릭 했을 경우 동작하지 않은 문제" ,"solution" : "각 버튼을 클릭 이후 상태값 초기화, 페이지네이션 초기화 진행" ,"link" :"https://hyeflix-hyerinkims-projects.vercel.app/"},
