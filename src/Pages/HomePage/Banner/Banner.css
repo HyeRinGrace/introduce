@@ -29,7 +29,7 @@
 @media (max-width:768px) {
     .BannerText {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 40%;
         transform: translate(-30%, -50%);
         z-index: 1; /* 배너 텍스트가 이미지 위로 올라오도록 설정 */

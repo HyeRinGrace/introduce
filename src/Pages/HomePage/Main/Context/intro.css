@@ -1,0 +1,15 @@
+/* intro.css */
+.NameTag {
+    width: 100px;
+    font-size: 32px;
+    font-weight: bolder;
+    white-space: nowrap;
+  }
+  
+  @media (max-width:768px) {
+    .NameTag {
+      font-size: 20px;
+      width: 60px;
+    }
+  }
+  
