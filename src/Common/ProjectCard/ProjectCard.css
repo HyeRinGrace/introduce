@@ -11,3 +11,21 @@
 }
 
 
+/* 스피너 스타일 */
+.spinner-border {
+    width: 0.8rem; /* 너비 조정 */
+    height: 0.8rem; /* 높이 조정 */
+  }
+  
+  /* 카드의 상대적인 위치 지정 */
+  .Card {
+    position: relative;
+  }
+  
+  /* 스피너를 카드 내부의 정중앙에 위치시킴 */
+  .spinner-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import '../Skills/Skill.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col,Badge } from 'react-bootstrap';
 import JsImage from '../../../../assets/JsImage.svg';
 import CssImage from '../../../../assets/CssImage.svg';
 import HtmlImage from '../../../../assets/HtmlImage.svg';
@@ -13,10 +13,14 @@ import ReactQueryImage from '../../../../assets/ReactQueryImage.svg';
 import FirebaseImage from '../../../../assets/Firebase.svg';
 import { Fade } from "react-awesome-reveal";
 import Typewriter from "typewriter-effect";
+import BootStrap from '../../../../assets/BootStrap.svg'
+import Vue from '../../../../assets/VueImage.svg'
+import Type from '../../../../assets/TsImage.svg'
 
 const Skill = () => {
-  const assets1 = [JsImage, CssImage, HtmlImage, ReactImage, GitImage];
-  const assets2 = [Vercel, NpmImage, ReduxImage, ReactQueryImage, FirebaseImage];
+  const assets1 = [JsImage, CssImage, HtmlImage, ReactImage, ReduxImage];
+  const assets2 = [ReactQueryImage, NpmImage, FirebaseImage,Vercel,GitImage];
+  const assets3 = [Vue,Type ];
 
   return (
     <>
@@ -33,10 +37,12 @@ const Skill = () => {
         }}
         style={{ fontSize: "60px" }}
       />
+
       <Container className='SkillContainer'>
+        <span class="badge bg-dark">자주 사용해 봤던</span>
         <Row>
           <Col className='skills'>
-            <Container className="d-flex flex-wrap"> 
+            <Container className="d-flex flex-wrap">
               {assets1.map((item, index) => (
                 <Fade duration={7000} key={index} className='ImageContainer' xs={12} sm={4} md={4}> 
                   <img className="SkillImages" src={item} alt={`Skill ${index}`} /> 
@@ -44,9 +50,20 @@ const Skill = () => {
               ))}
             </Container>
             <Container className="d-flex flex-wrap" style={{
-              paddingBottom:'90px'
+              paddingBottom:'30px'
             }}> 
               {assets2.map((item, index) => (
+                <Fade duration={5000} key={index} className='ImageContainer' xs={12} sm={4} md={4}> 
+                  <img className="SkillImages" src={item} alt={`Skill ${index}`} /> 
+                </Fade>
+              ))}
+            </Container>
+            
+            <span class="badge bg-dark">많이 사용해보지 못했던</span>
+            <Container className="d-flex flex-wrap" style={{
+              paddingBottom:'30px'
+            }}> 
+              {assets3.map((item, index) => (
                 <Fade duration={5000} key={index} className='ImageContainer' xs={12} sm={4} md={4}> 
                   <img className="SkillImages" src={item} alt={`Skill ${index}`} /> 
                 </Fade>

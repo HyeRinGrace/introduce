@@ -19,7 +19,7 @@ const ProjectCard = () => {
     };
 
     return (
-        <>
+        <>  
             <Fade cascade={1000} style={{
                 fontSize: '30px',
                 fontWeight: 'bold',
@@ -32,7 +32,6 @@ const ProjectCard = () => {
                 delay: 100,
                 }}
             />
-
             <Container className='ProjectContainer'>
                 <Fade cascade={9000}>
                     <Row>
