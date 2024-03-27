@@ -36,6 +36,10 @@ const ProjectModal = ({ setShowModal, project }) => {
                 </Row>
                 <div className='ContextXContainer'>
                     <Row className='ContextBox'>
+                        <Col xs={3} style={{ fontWeight: 'bold' }}>설명</Col>
+                        <Col className="skills" xs={6}>{project.intro}</Col>
+                    </Row>
+                    <Row className='ContextBox'>
                         <Col xs={3} style={{ fontWeight: 'bold' }}>사용한 스킬</Col>
                         <Col className="skills" xs={6}>{project.skills}</Col>
                     </Row>
