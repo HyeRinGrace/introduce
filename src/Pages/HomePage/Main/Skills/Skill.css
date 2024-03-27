@@ -1,6 +1,6 @@
 .SkillContainer{
     color: white;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom:81px;
 }
 
@@ -26,7 +26,8 @@
 
 .ImageContainer{
     background-color: black;
-    width: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,17 +39,18 @@
     .SkillImages{
         width: 50px;
         height: 50px;
-        padding:4px;
+        padding:5px;
     }
 
     .SkillContainer{
         color: white;
-        padding-top: 130px;
+        padding-top: 70px;
         padding-bottom:81px;
     }
     .ImageContainer{
         background-color: black;
         width: 43px;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -56,3 +58,23 @@
     }
     
 }
+/* 초기에 숨겨진 상태 */
+span.badge {
+    opacity: 0;
+  }
+  
+  /* 서서히 나타나는 효과 */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* 애니메이션 적용 */
+  span.badge {
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
