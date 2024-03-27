@@ -59,7 +59,7 @@ const Skill = () => {
               ))}
             </Container>
             
-            <span class="badge bg-dark">많이 사용해보지 못했던</span>
+            <span class="badge bg-dark">자주 사용해보지 못했던</span>
             <Container className="d-flex flex-wrap" style={{
               paddingBottom:'30px'
             }}> 
